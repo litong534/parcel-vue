@@ -1,27 +1,29 @@
 {
-  "name": "parcel-vue",
+  "name": "vue-example",
+  "description": "A Vue.js project",
   "version": "1.0.0",
-  "main": "main.js",
+  "author": "litong534 <litong534@sina.com>",
   "license": "MIT",
-  "author": "rozwel",
+  "private": true,
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html",
+    "clean": "rimraf .cache dist"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "devDependencies": {
     "autoprefixer": "^7.2.5",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "parcel-bundler": "^1.4.1",
-    "parcel-plugin-vue": "^1.5.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "node-sass": "^4.5.3",
+    "parcel-bundler": "parcel-bundler/parcel#vue",
     "postcss-modules": "^1.1.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
-    "vue-loader": "^13.7.0",
-    "vue-style-loader": "^3.0.3",
-    "vue-template-compiler": "^2.5.13"
-  },
-  "dependencies": {
+    "rimraf": "^2.6.2",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1"
   }
