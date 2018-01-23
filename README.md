@@ -30,34 +30,6 @@ $ npm run dev
 $ npm run build
 ```
 
-#### 开发
-目录结构
-```js
-src
-├── router
-    ├── index.js
-├── assets
-    ├── logo.png
-├── components
-	├── Hello
-		├── index.js
-	├── index.js
-├── views
-    ├── HelloWorld
-        ├── images
-            ├── logo.png
-        ├── HelloWorld.vue
-├── styles
-	├── common.css
-├── store
-    ├── global
-        ├── global.js
-        ├── index.js
-    ├── index.js
-├── app.vue
-├── index.js
-```
-
 只需要执行`npm run dev` 和 `npm run build` 就可以进行开发和构建。
 
 #### 路由懒加载
@@ -68,11 +40,3 @@ import HelloWorld from '../views/HelloWorld/HelloWorld.vue'
 // 此种方式引入即可实现路由懒加载,打包时js文件自动拆分
 const HelloWorld =  () => import('../views/HelloWorld/HelloWorld.vue')
 ```
-
-#### nodejs版本升级,如果您的node版本低于8.0,我们强烈建议您升级node版本(命令行升级不支持windows)
-
-```bash
-$ npm install -g n
-$ n stable
-```
-
